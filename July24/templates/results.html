@@ -1,0 +1,7 @@
+<h1>This page is to show exam details</h1>
+<hr>
+{% if r %}
+    <h2>Good morning, Rollno:{{ r.rollno }} <br> Name:{{ r.name }} <br> CGPA:{{ r.cgpa }} <br> Passed subjects:{{ r.subjects }} <br> Failed Subjects:{{ r.failed_subjects }}</h2>
+{% else %}
+    <h2>Data not found...</h2>
+{% endif %}
